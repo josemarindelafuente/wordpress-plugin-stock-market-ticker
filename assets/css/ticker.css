@@ -1,0 +1,212 @@
+/* Stock Market Ticker - Frontend Styles */
+
+/* Importar fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&family=Nunito:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.smt-ticker-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Efecto hover */
+.smt-hover-effect .smt-ticker-item {
+    transition: all 0.3s ease;
+}
+
+.smt-hover-effect .smt-ticker-item:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.smt-ticker-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    animation: smt-scroll 20s linear infinite;
+    width: max-content;
+}
+
+@keyframes smt-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-33.333%);
+    }
+}
+
+.smt-ticker-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 40px;
+    padding: 0;
+    flex-shrink: 0;
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+.smt-color-square {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    flex-shrink: 0;
+}
+
+.smt-ticker-value {
+    margin-right: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.smt-ticker-label {
+    white-space: nowrap;
+}
+
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .smt-ticker-container {
+        height: 70px !important;
+    }
+    
+    .smt-ticker-item {
+        font-size: 17px;
+        margin-right: 50px;
+        padding: 0;
+    }
+    
+    .smt-ticker-value {
+        font-size: 22px;
+    }
+    
+    .smt-ticker-label {
+        font-size: 17px;
+    }
+    
+    .smt-color-square {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+    }
+    
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+    .smt-ticker-container {
+        height: 60px !important;
+    }
+    
+    .smt-ticker-item {
+        font-size: 16px;
+        margin-right: 40px;
+        padding: 0;
+    }
+    
+    .smt-ticker-value {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+    
+    .smt-ticker-label {
+        font-size: 16px;
+    }
+    
+    .smt-color-square {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+    }
+    
+}
+
+/* Mobile Medium */
+@media (max-width: 480px) {
+    .smt-ticker-container {
+        height: 50px !important;
+    }
+    
+    .smt-ticker-item {
+        font-size: 14px;
+        margin-right: 30px;
+        padding: 0;
+    }
+    
+    .smt-ticker-value {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .smt-ticker-label {
+        font-size: 14px;
+    }
+    
+    .smt-color-square {
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+    }
+    
+}
+
+/* Mobile Small */
+@media (max-width: 360px) {
+    .smt-ticker-container {
+        height: 45px !important;
+    }
+    
+    .smt-ticker-item {
+        font-size: 12px;
+        margin-right: 25px;
+        padding: 0;
+    }
+    
+    .smt-ticker-value {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    .smt-ticker-label {
+        font-size: 12px;
+    }
+    
+    .smt-color-square {
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+    }
+    
+}
+
+/* Landscape orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+    .smt-ticker-container {
+        height: 50px !important;
+    }
+    
+    .smt-ticker-item {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    
+    .smt-ticker-value {
+        font-size: 18px;
+    }
+    
+    .smt-ticker-label {
+        font-size: 14px;
+    }
+}
+
+
