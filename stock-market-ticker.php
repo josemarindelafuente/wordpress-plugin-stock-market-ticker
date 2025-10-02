@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Stock Market Ticker | San Miguel de Tucumán
- * Plugin URI: https://www.marindelafuente.com.ar
+ * Plugin URI: https://github.com/josemarindelafuente/wordpress-plugin-stock-market-ticker
  * Description: Un ticker animado para mostrar datos municipales o cualquier información con loop infinito. Agrega datos desde el panel de administración y usa el shortcode [stock_ticker] para mostrar el ticker.
  * Version: 1.0.0
  * Author: Jose Marin de la Fuente
